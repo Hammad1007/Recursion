@@ -1,5 +1,3 @@
-// Find the factorial 
-
 #include <iostream>
 using namespace std;
 
@@ -18,6 +16,10 @@ int main() {
     int num;
     cout << "Enter the number: ";
     cin >> num;
+    if(num < 0) {
+        cout << "Invalid.\n";
+        return 0;
+    }
     int res = factorial(num);
     cout << "The factorial of " << num << " is: " << res << endl; 
     return 0;
